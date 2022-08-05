@@ -1,0 +1,20 @@
+{
+  "name": "tdd-cash-control",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Faelst/tdd-cash-control.git",
+  "author": "Rafael Silverio <fael_st@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --no-cache --watchAll"
+  },
+  "dependencies": {
+    "@types/node": "^18.6.4",
+    "jest": "^28.1.3",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "ts-jest": "^28.0.7"
+  }
+}
