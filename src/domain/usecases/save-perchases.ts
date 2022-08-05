@@ -1,8 +1,8 @@
-namespace SavePurchases {
+export namespace SavePurchases {
     export type params = {
         id: string
-        date: string
-        value: string 
+        date: Date
+        value: number
     }
 
     export type result = void

@@ -1,4 +1,6 @@
+import { SavePurchases } from "@/domain"
+
 export interface CacheStore {
-    insert: (key: string) => void
-    delete: (key: string) => void
+  delete: (key: string) => void
+  insert: (key: string, value: any) => void
 }
