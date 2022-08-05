@@ -1,6 +1,6 @@
 import { CacheStore } from "@/data/protocols/cache"
 import { LocalSavePurchases } from "@/data/usecases"
-import { SavePurchases } from "@/domain"
+import { SavePurchases } from "@/domain/usecases"
 
 class CacheStoreSpy implements CacheStore {
   deleteKey: string = ""
@@ -97,6 +97,7 @@ describe('LocalSavePurchases', () => {
       const { cacheStore, sut } = makeSut()
       cacheStore.simulateInsertError()
       const promise = sut.save(mockPurchases())
+
       expect(promise).rejects.toThrow()
     })
   })
