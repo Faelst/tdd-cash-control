@@ -1,4 +1,5 @@
 import { CacheStore } from "@/data/protocols/cache"
+import { mockPurchases } from "@/data/tests"
 import { LocalSavePurchases } from "@/data/usecases"
 import { SavePurchases } from "@/domain/usecases"
 
@@ -44,16 +45,6 @@ const makeSut = (): SutTypes => {
   }
 }
 
-const mockPurchases = (): Array<SavePurchases.params> => [{
-  id: "1",
-  date: new Date(),
-  value: 10
-},
-{
-  id: "2",
-  date: new Date(),
-  value: 20
-}]
 
 describe('LocalSavePurchases', () => {
   describe('when create intance', () => {
